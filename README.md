@@ -255,7 +255,7 @@ Experiments are evaluated on 50 held-out MATH benchmark problems (greedy decodin
 | Experiment | Pre-acc | Eval-acc | Delta | Flags active |
 |------------|---------|----------|-------|--------------|
 | baseline | 0.640 | 0.640 | +0.000 | none |
-| imp1_sympy | 0.640 | — | — | sympy_reward |
+| imp1_sympy | 0.640 | 0.680 | +0.040 | sympy_reward |
 | imp2_kl | 0.640 | — | — | kl_penalty |
 | imp4_step | 0.640 | 0.660 | +0.020 | step_reward |
 | imp6_anneal | 0.640 | — | — | temp_anneal |
