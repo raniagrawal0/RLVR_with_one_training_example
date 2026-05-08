@@ -218,14 +218,6 @@ Pass these keys in the `flags` dict to `run_experiment()`:
 | `"anneal"` | Temperature annealing 1.0→0.4 (Imp 6) | `False` |
 | `"lennorm"` | Length-normalized policy loss (Imp 7) | `False` |
 
-**Example — all improvements combined:**
-```python
-run_experiment("all", {
-    "sympy": True, "kl": True, "format": True,
-    "step": True, "rollouts": True, "anneal": True, "lennorm": True
-}, train_sample, eval_samples)
-```
-
 ---
 
 ## Output Files
@@ -282,7 +274,7 @@ __pycache__/
 
 | Name | Roll No | Contribution |
 |------|---------|-------------|
-| Rani | u23ai131 | Implementation — RL training pipeline, all 7 improvements, experiment tracker, bug fixes |
+| Rani | u23ai131 | Implementation — RL training pipeline, all 4 improvements, experiment tracker, bug fixes |
 | Sanjhi | u23ai121 | Research — improvement ideas, literature review, experiment design |
 | Mohit | u23ai117 | Baseline replication — paper verification, answer extraction, dataset pipeline |
 
