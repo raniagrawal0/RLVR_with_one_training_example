@@ -39,11 +39,8 @@ The training algorithm is **GRPO (Group Relative Policy Optimization)** with a L
 | Baseline fix | Fixed prompt decoding: token-index slicing instead of string-length slicing | Essential |
 | Imp 1 | SymPy-based answer normalization — `1/2 == 0.5 == \frac{1}{2}` | +accuracy |
 | Imp 2 | Extra KL penalty against frozen reference model | +stability |
-| Imp 3 | Format reward for `\boxed{}` presence | +formatting |
-| Imp 4 | Step-wise process reward for reasoning lines | +reasoning |
-| Imp 5 | Increased rollouts K=8→16 | +signal |
-| Imp 6 | Temperature annealing (1.0→0.4 over training) | +exploration |
-| Imp 7 | Length-normalized policy loss `sum(logp)/√n` | +fairness |
+| Imp 3 | Step-wise process reward for reasoning lines | +reasoning |
+| Imp 4 | Temperature annealing (1.0→0.4 over training) | +exploration |
 
 ---
 
